@@ -27,7 +27,7 @@ for i, outer in enumerate(data):
     print(data[i][1]) 
     # This writes on the second column of each row to the file1 ("testfileRevision.txt")
 	# notice you must cast to a string as .txt files will only accept strings. 
-	file1.write(str(data[i][1])
+	file1.write(str(data[i][1]))
 file.close()
 file1.close()
      
