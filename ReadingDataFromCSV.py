@@ -17,8 +17,6 @@ file  = open("testfileRevision.txt","w") #this opens a new or existing file with
 
 file.write(str(data)) # This is how you would write the whole list of lists to a txt file
 
-file1  = open("testfileRevision.txt","w") #this opens a new or existing file with write permissions
-
  # This is how you would iterate through the list of lists
  # Each row is a new list. So if you wanted to access the first row [0] and the second column [1] in the variable data[][] 
  # You would do so like data[0][1] as so on. 
@@ -29,5 +27,4 @@ for i, outer in enumerate(data):
 	# notice you must cast to a string as .txt files will only accept strings. 
 	file1.write(str(data[i][1]))
 file.close()
-file1.close()
      
